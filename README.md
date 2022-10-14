@@ -1,7 +1,7 @@
 # 2022-c
 資傳一甲
-#week06
-##step01-1
+# week06
+## step01-1
 模仿它的鷹架
 ```cpp
 #include <stdio.h>
@@ -13,7 +13,7 @@ int main()
     }
 }
 ```
-##step01-2
+## step01-2
 先把樓層鷹架架好, 再去思考有幾個空格、有幾個星星。
 ```cpp
 #include <stdio.h>
@@ -32,7 +32,7 @@ int main()
     }
 }
 ```
-##step01-3
+## step01-3
 找到最大公因數
 #include <stdio.h>
 int main()
@@ -47,7 +47,7 @@ int main()
     printf("找到ans:%d",ans);
 }
 ```
-##step01-4
+## step01-4
 約分
 ```cpp
 #include <stdio.h>
@@ -68,7 +68,7 @@ int main()
     printf("中的是:%d",b);
 }
 ```
-##step01-5
+## step01-5
 輾轉相除法
 ```cpp
 #include <stdio.h>
