@@ -101,6 +101,7 @@ int main()
         printf("不管甚麼東西,幾乎都成立\n");
 }
 ```
+
 #week07
 ##step01-1
 很長很長的整數, 要用 long long int
