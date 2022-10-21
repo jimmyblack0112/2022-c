@@ -102,8 +102,8 @@ int main()
 }
 ```
 
-#week07
-##step01-1
+# week07
+## step01-1
 很長很長的整數, 要用 long long int
 ```cpp
 #include <stdio.h>
@@ -115,7 +115,7 @@ int main()
     printf("%lld\n",a);
 }
 ```
-##step01-2
+## step01-2
 最大公因數
 ```cpp
 #include <stdio.h>
@@ -132,7 +132,7 @@ int main()
     printf("答案是:%lld\n",ans);
 }
 ```
-##step01-3
+## step01-3
 輾轉相除法
 ```cpp
 #include <stdio.h>
@@ -151,7 +151,7 @@ int main()
     printf("答案是:%lld\n",b);
 }
 ```
-##step01-4
+## step01-4
 ```cpp
 #include <stdio.h>
 int main()
