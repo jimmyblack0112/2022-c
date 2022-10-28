@@ -163,3 +163,90 @@ int main()
     }
 }
 ```
+
+# week08
+## step01-1
+2個for迴圈的直角三角形
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    for(int i=1; i<=n; i++) {
+        for(int k=1; k<=n; k++) {
+            if(k<=n-i)
+                printf(" ");
+            else
+                printf("*");
+        }
+        printf("\n");
+    }
+}
+```
+## step02-1
+2個while迴圈的直角三角形
+```cpp
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    int i=1;
+    while(i<=n) {
+        int j=1;
+        while(j<=n) {
+            if(j<=n-i)
+                printf(" ");
+            else
+                printf("*");
+            j++;
+        }
+        printf("\n");
+        i++;
+    }
+}
+```
+## step02-2
+質數判別
+```cpp
+#include <stdio.h>
+int main()
+{
+    printf("要判斷你輸入的數是不是質數:");
+    int n;
+    scanf("%d",&n);
+
+    int bad=0;
+    for(int i=2; i<n; i++) {
+        if(n%i==0)
+            bad=1;
+    }
+    if(bad==0)
+        printf("%d 是質數",n);
+    else
+        printf("%d 不是質數",n);
+}
+```
+## step02-3
+for 列出質數
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+
+    for(int n=2; n<=a; n++) {
+        int bad=0;
+        for(int i=2; i<n; i++) {
+            if(n%i==0)
+                bad=1;
+        }
+        if(bad==0)
+            printf("%d ",n);
+    }
+}
+```
