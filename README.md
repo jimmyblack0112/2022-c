@@ -575,6 +575,23 @@ int main()
     printf("main()的a,b是:%d %d\n",a,b);
 }
 ```  
+## step02-2
+```cpp
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d%d",&a,&b);
+
+    while(1){
+        c=a%b;
+        if(c==0) break;
+        a=b;
+        b=c;
+    }
+    printf("%d",b);
+}
+```
 ## step02-3
 ```cpp
 #include <stdio.h>
