@@ -1,11 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
-    printf("請輸入一個數字:");
+    char line[30];
+    scanf("%s",line);
 
-    int n;
-    scanf("%d",&n);
-    if(n>10) printf("大於10\n");
-    if(n<10) printf("小於10\n");
-    if(n==10) printf("等於10\n");
+    int N=strlen(line);
+    int bad=0;
+    for(int i=0; i<N; i++) {
+        if(line[i] !=line[N-1-i])
+            bad=1;
+    }
+    if(bad==1)
+        printf("他不是回文\n");
+    else
+        printf("他是回文\n");
 }
