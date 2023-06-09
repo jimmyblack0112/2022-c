@@ -5,11 +5,14 @@ void setup(){
   size(200,200);
   sound=new SoundFile(this,"dot.wav");
 }
-
+String line ="type: ";
 void draw(){  
-  if(keyPressed) background(255,0,0);
-  else background(#FFFFF2);
+  background(#FFFFF2);
+  fill(0);
+  textSize(30);
+  text(line,50,50);
 }
 void keyPressed(){
   sound.play(); 
+  line +=key;
 }
